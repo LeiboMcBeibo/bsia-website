@@ -1,0 +1,119 @@
+/* ============================================================
+   Baltic Street Into Action — Shared Site Stylesheet
+   Common design tokens, reset, nav, footer, and repeated
+   component styles used across multiple pages.
+   Page-specific styles remain in each page's own <style> block.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --violet: #6B2D8B;
+  --violet-dark: #4A1E61;
+  --violet-deep: #3D1556;
+  --gold: #D4A017;
+  --crimson: #E8450A;
+  --soft-violet: #9B6AB5;
+  --parchment: #F5F0EA;
+  --parch-dark: #EDE7DE;
+  --ink: #2C2C3A;
+  --ink-light: #4A4A5A;
+  --cream: #FAF7F3;
+  --white: #FFFFFF;
+  --gray-mid: #888899;
+  --placeholder: #C8BFD8;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Breadcrumb */
+.bc-home { font-size:11px; color:rgba(255,255,255,0.5); font-weight:500; }
+.bc-sep  { color:rgba(255,255,255,0.25); font-size:11px; }
+.bc-cur  { font-size:11px; color:var(--gold); font-weight:600; }
+.breadcrumb .here { color:var(--gold); }
+.breadcrumb .sep { margin:0 8px; }
+
+/* Nav */
+.nav-donate {
+  background:var(--gold); color:var(--ink) !important;
+  font-weight:700 !important; font-size:10.5px !important;
+  letter-spacing:0.08em; text-transform:uppercase; padding:8px 18px;
+}
+
+/* Section tags / labels */
+.stag {
+  font-size:10px; font-weight:700; letter-spacing:0.22em;
+  text-transform:uppercase; margin-bottom:10px;
+}
+.stag-violet { color:var(--soft-violet); }
+.stag-gold   { color:var(--gold); }
+.stag-crimson{ color:var(--crimson); }
+
+/* Buttons */
+.btn { display:inline-block; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em;
+  padding:13px 28px; transition:opacity .15s; }
+.btn:hover { opacity:0.88; }
+.btn-crimson { background:var(--crimson); color:#fff; }
+.btn-donate { background:var(--gold); color:var(--ink); font-size:10.5px; font-weight:600;
+  text-transform:uppercase; letter-spacing:0.08em; padding:8px 18px; }
+.btn-donate:hover { background:#E4B334; }
+.btn-outline-v { border:2px solid var(--violet); color:var(--violet); }
+.btn-outline-w { border:2px solid rgba(255,255,255,0.7); color:#fff; }
+
+/* Hero decorative circles */
+.hero-circle { position:absolute; border-radius:50%; background:rgba(255,255,255,0.05); pointer-events:none; }
+.hc1 { width:520px; height:520px; right:-120px; top:-180px; }
+.hc2 { width:300px; height:300px; right:220px; bottom:-160px; background:rgba(61,21,86,0.45); }
+
+/* Hero text */
+.hero-lede { margin-top:22px; font-size:16.5px; line-height:1.8; color:rgba(255,255,255,0.85); max-width:600px; }
+.hero-stat { display:inline-block; margin-top:26px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25);
+  padding:6px 16px; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; }
+
+/* Eyebrow labels */
+.eyebrow { font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--crimson); margin-bottom:10px; }
+.eyebrow.v { color:var(--soft-violet); }
+
+/* Section shells */
+.sec-parch { background:var(--parchment); }
+.sec-parch-dark { background:var(--parch-dark); }
+.sec-ink { background:var(--ink); color:#fff; }
+.sec-ink h2 { color:#fff; }
+.section-sub { margin-top:14px; max-width:640px; color:var(--ink-light); }
+.section-lead { font-size:16px; color:var(--ink-light); line-height:1.8; }
+.wrap { max-width:1190px; margin:0 auto; }
+
+/* Quick-facts strip */
+.qf-cell::before {
+  content:""; position:absolute; top:0; left:50%; transform:translateX(-50%);
+  width:36px; height:3px; background:var(--gold);
+}
+.qf-cell:not(:last-child)::after {
+  content:""; position:absolute; right:0; top:50%; transform:translateY(-50%);
+  width:1px; height:44px; background:rgba(255,255,255,0.08);
+}
+.qf-lbl {
+  font-size:9.5px; font-weight:600; color:rgba(255,255,255,0.45);
+  letter-spacing:0.14em; text-transform:uppercase;
+}
+.qf-num {
+  font-family:"Fraunces",serif; font-size:30px; font-weight:700;
+  color:var(--gold); display:block; line-height:1; margin-bottom:6px;
+}
+
+/* Placeholder note */
+.placeholder-note { margin-top:34px; border:1.5px dashed var(--soft-violet); background:rgba(155,106,181,0.08); padding:18px 24px; }
+.placeholder-note .pn-label { font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--violet); }
+.placeholder-note p { font-size:13.5px; font-style:italic; color:var(--ink-light); margin-top:4px; }
+
+/* CTA band */
+.cta-band { background:var(--violet-dark); color:#fff; text-align:center; padding:70px 56px; }
+.cta-band h2 { color:#fff; }
+.cta-band p { max-width:560px; margin:16px auto 30px; color:rgba(255,255,255,0.8); }
+
+/* Footer */
+.footer-col ul { list-style:none; }
+.footer-soc { width:34px; height:34px; border-radius:9px; overflow:hidden; display:flex; align-items:center; justify-content:center; transition:transform 0.15s ease, opacity 0.15s ease; }
+.footer-soc svg { display:block; width:100%; height:100%; }
+.footer-soc:hover { transform:translateY(-2px); opacity:0.85; }
+.footer-socials { display:flex; gap:10px; }
