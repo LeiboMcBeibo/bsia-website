@@ -27,10 +27,10 @@
 html { scroll-behavior: smooth; }
 
 /* Breadcrumb */
-.bc-home { font-size:11px; color:rgba(255,255,255,0.5); font-weight:500; }
-.bc-sep  { color:rgba(255,255,255,0.25); font-size:11px; }
-.bc-cur  { font-size:11px; color:var(--gold); font-weight:600; }
-.breadcrumb .here { color:var(--gold); }
+.bc-home { font-size:11px; color:rgba(255,255,255,0.7); font-weight:500; }
+.bc-sep  { color:rgba(255,255,255,0.7); font-size:11px; }
+.bc-cur  { font-size:11px; color:#E0B952; font-weight:600; }
+.breadcrumb .here { color:#E0B952; }
 .breadcrumb .sep { margin:0 8px; }
 
 /* Nav */
@@ -45,16 +45,16 @@ html { scroll-behavior: smooth; }
   font-size:10px; font-weight:700; letter-spacing:0.22em;
   text-transform:uppercase; margin-bottom:10px;
 }
-.stag-violet { color:var(--soft-violet); }
+.stag-violet { color:#815696; }
 .stag-gold   { color:var(--gold); }
-.stag-crimson{ color:var(--crimson); }
+.stag-crimson{ color:#C43A09; }
 
 /* Buttons */
 .btn { display:inline-block; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em;
   padding:13px 28px; transition:opacity .15s; }
 .btn:hover { opacity:0.88; }
-.btn-crimson { background:var(--crimson); color:#fff; }
-.btn-donate { background:var(--gold); color:var(--ink); font-size:10.5px; font-weight:600;
+.btn-crimson { background:#D6400A; color:#fff; }
+.btn-donate { background:var(--gold); color:var(--ink) !important; font-size:10.5px; font-weight:700 !important;
   text-transform:uppercase; letter-spacing:0.08em; padding:8px 18px; }
 .btn-donate:hover { background:#E4B334; }
 .btn-outline-v { border:2px solid var(--violet); color:var(--violet); }
@@ -71,8 +71,8 @@ html { scroll-behavior: smooth; }
   padding:6px 16px; font-size:11px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; }
 
 /* Eyebrow labels */
-.eyebrow { font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--crimson); margin-bottom:10px; }
-.eyebrow.v { color:var(--soft-violet); }
+.eyebrow { font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#C43A09; margin-bottom:10px; }
+.eyebrow.v { color:#815696; }
 
 /* Section shells */
 .sec-parch { background:var(--parchment); }
@@ -93,7 +93,7 @@ html { scroll-behavior: smooth; }
   width:1px; height:44px; background:rgba(255,255,255,0.08);
 }
 .qf-lbl {
-  font-size:9.5px; font-weight:600; color:rgba(255,255,255,0.45);
+  font-size:9.5px; font-weight:600; color:rgba(255,255,255,0.55);
   letter-spacing:0.14em; text-transform:uppercase;
 }
 .qf-num {

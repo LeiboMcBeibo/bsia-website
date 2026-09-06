@@ -21,7 +21,7 @@ body { font-family:"Inter",sans-serif; background:var(--cream);
 a { text-decoration:none; }
 
 .progress-banner {
-  background:var(--crimson); color:white; text-align:center;
+  background:#D6400A; color:white; text-align:center;
   padding:9px 24px; font-size:10.5px; font-weight:600;
   letter-spacing:0.1em; text-transform:uppercase;
 }
@@ -38,7 +38,7 @@ a { text-decoration:none; }
   border:2px solid var(--gold); box-shadow:0 0 0 3px rgba(212,160,23,0.18); flex-shrink:0;
 }
 .nav-wordmark-name { font-family:"Fraunces",serif; font-size:14px; font-weight:600; color:white; }
-.nav-wordmark-sub { font-size:10px; color:rgba(255,255,255,0.45); }
+.nav-wordmark-sub { font-size:10px; color:rgba(255,255,255,0.55); }
 .nav-links { display:flex; align-items:center; gap:22px; list-style:none; }
 .nav-links a { font-size:11.5px; font-weight:500; color:rgba(255,255,255,0.65); }
 .nav-links a.active { color:var(--gold); font-weight:600; }
@@ -59,7 +59,7 @@ a { text-decoration:none; }
   line-height:1.05; letter-spacing:-0.025em; color:white; margin-bottom:20px;
 }
 .page-hero h1 em { font-family:"Noto Serif",serif; font-weight:600; font-style:italic; color:rgba(255,255,255,0.7); }
-.page-hero-sub { font-size:17px; color:rgba(255,255,255,0.62); line-height:1.75; max-width:600px; }
+.page-hero-sub { font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; max-width:600px; }
 
 /* QUICK FACTS */
 .quick-facts { background:var(--ink); display:grid; grid-template-columns:repeat(3,1fr); }
@@ -90,7 +90,8 @@ a { text-decoration:none; }
 }
 .featured-img-label {
   position:absolute; bottom:16px; left:20px; right:20px;
-  font-size:10px; font-style:italic; color:rgba(255,255,255,0.5); z-index:1;
+  font-size:10px; font-style:italic; color:#fff; z-index:1;
+  background:rgba(0,0,0,0.55); display:inline-block; padding:3px 10px; border-radius:3px;
 }
 .featured-img-icon {
   position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
@@ -103,13 +104,13 @@ a { text-decoration:none; }
   padding:5px 12px; border-radius:2px; margin-bottom:16px;
 }
 .tag-violet { background:rgba(107,45,139,0.1); color:var(--violet); }
-.tag-crimson { background:rgba(232,69,10,0.1); color:var(--crimson); }
+.tag-crimson { background:rgba(232,69,10,0.1); color:#C43A09; }
 .featured-body h3 {
   font-family:"Fraunces",serif; font-size:24px; font-weight:700;
   color:var(--ink); line-height:1.25; margin-bottom:10px;
 }
 .featured-partner {
-  font-size:12px; font-weight:600; color:var(--soft-violet);
+  font-size:12px; font-weight:600; color:#8C5FA3;
   letter-spacing:0.04em; margin-bottom:16px;
 }
 .featured-body p { font-size:14.5px; color:var(--ink-light); line-height:1.72; margin-bottom:14px; }
@@ -118,7 +119,7 @@ a { text-decoration:none; }
   border-top:1px solid var(--parch-dark);
 }
 .featured-meta-item { }
-.fm-label { font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-mid); margin-bottom:2px; }
+.fm-label { font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#70707F; margin-bottom:2px; }
 .fm-value { font-size:13px; font-weight:600; color:var(--ink); font-family:"Fraunces",serif; }
 
 /* PROJECT GRID */
@@ -157,7 +158,7 @@ a { text-decoration:none; }
   color:var(--ink); line-height:1.3; margin-bottom:6px;
 }
 .proj-partner {
-  font-size:11px; font-weight:600; color:var(--soft-violet);
+  font-size:11px; font-weight:600; color:#8C5FA3;
   letter-spacing:0.03em; margin-bottom:12px;
 }
 .proj-body p { font-size:13px; color:var(--ink-light); line-height:1.65; }
@@ -189,6 +190,7 @@ a { text-decoration:none; }
 .funding-note {
   background:var(--parch-dark); padding:60px 56px; text-align:center;
 }
+.funding-note .stag-gold { color:#805B0E; }
 .funding-note-inner { max-width:720px; margin:0 auto; }
 .funding-note h2 {
   font-family:"Fraunces",serif; font-size:26px; font-weight:700;
@@ -207,7 +209,7 @@ a { text-decoration:none; }
   border:60px solid rgba(255,255,255,0.08); top:-150px; right:360px;
 }
 .cta h2 { font-family:"Fraunces",serif; font-size:36px; font-weight:700; color:var(--ink); line-height:1.1; margin-bottom:14px; }
-.cta p { font-size:16px; color:rgba(44,44,58,0.7); line-height:1.75; max-width:520px; }
+.cta p { font-size:16px; color:var(--ink); line-height:1.75; max-width:520px; }
 .cta-btns { display:flex; flex-direction:column; gap:12px; align-items:center; }
 .btn-ink { background:var(--ink); color:white; font-size:11px; font-weight:700;
   letter-spacing:0.1em; text-transform:uppercase; padding:15px 40px; white-space:nowrap; }
@@ -218,16 +220,16 @@ a { text-decoration:none; }
 footer { background:var(--ink); padding:64px 56px 28px; }
 .footer-grid { display:grid; grid-template-columns:2.2fr 1fr 1fr 1.2fr; gap:52px;
   padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,0.07); margin-bottom:24px; }
-.footer-brand h3 { font-family:"Fraunces",serif; font-size:17px; font-weight:600; color:white; margin-bottom:8px; }
-.footer-tagline { font-size:14px; color:rgba(255,255,255,0.65); line-height:1.7; margin-bottom:24px; max-width:280px; }
+.footer-brand h3 { font-family:"Fraunces",serif; font-size:17px; font-weight:600; color:var(--gold); margin-bottom:8px; }
+.footer-tagline { font-size:14px; color:#fff; line-height:1.7; margin-bottom:24px; max-width:280px; }
 
-.footer-col h4 { font-size:9.5px; font-weight:700; color:var(--gold);
+.footer-col h4 { font-size:17px; font-weight:700; color:var(--gold);
   letter-spacing:0.18em; text-transform:uppercase; margin-bottom:16px; }
 
-.footer-col ul li { font-size:14px; color:rgba(255,255,255,0.65); margin-bottom:9px; }
-.footer-col ul li a { color:rgba(255,255,255,0.65); text-decoration:none; }
+.footer-col ul li { font-size:14px; color:#fff; margin-bottom:9px; }
+.footer-col ul li a { color:#fff; text-decoration:none; }
 .footer-col ul li a:hover { color:#fff; }
-.footer-bottom { display:flex; justify-content:space-between; font-size:12px; color:rgba(255,255,255,0.6); }
+.footer-bottom { display:flex; justify-content:space-between; font-size:12px; color:#fff; }
 </style>
 </head>
 <body>
@@ -436,7 +438,7 @@ footer { background:var(--ink); padding:64px 56px 28px; }
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
-      <ul><li>240 8th Street, Suite 5N</li><li>Brooklyn NY 11215</li><li style="margin-top:10px;">(347) 450-0567</li><li>balticstreetintoaction.com</li></ul>
+      <ul><li>240 8th Street, Suite 5N</li><li>Brooklyn NY 11215</li><li style="margin-top:10px;">(347) 450-0567</li><li><a href="https://balticstreetintoaction.com/" target="_blank" rel="noopener">balticstreetintoaction.com</a></li></ul>
     </div>
   </div>
   <div class="footer-bottom">

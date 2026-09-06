@@ -23,7 +23,7 @@ a { text-decoration:none; }
 
 /* PROGRESS BANNER */
 .progress-banner {
-  background:var(--crimson); color:white; text-align:center;
+  background:#D6400A; color:white; text-align:center;
   padding:9px 24px; font-size:10.5px; font-weight:600;
   letter-spacing:0.1em; text-transform:uppercase;
 }
@@ -45,7 +45,7 @@ a { text-decoration:none; }
   font-family:"Fraunces",serif; font-size:14px;
   font-weight:600; color:white; letter-spacing:-0.01em;
 }
-.nav-wordmark-sub { font-size:10px; color:rgba(255,255,255,0.45); letter-spacing:0.04em; }
+.nav-wordmark-sub { font-size:10px; color:rgba(255,255,255,0.55); letter-spacing:0.04em; }
 .nav-links { display:flex; align-items:center; gap:22px; list-style:none; }
 .nav-links a { font-size:11.5px; font-weight:500; color:rgba(255,255,255,0.65); }
 .nav-links a.active { color:var(--gold); font-weight:600; }
@@ -75,7 +75,7 @@ a { text-decoration:none; }
 }
 .page-hero h1 em { font-family:"Noto Serif",serif; font-weight:600; font-style:italic; color:rgba(255,255,255,0.7); }
 .page-hero-sub {
-  font-size:17px; color:rgba(255,255,255,0.62); line-height:1.75; max-width:580px;
+  font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; max-width:580px;
 }
 
 /* QUICK FACTS */
@@ -194,6 +194,7 @@ a { text-decoration:none; }
   background:var(--violet); padding:88px 56px;
   position:relative; overflow:hidden;
 }
+.why-arts .stag-gold { color:#E0B952; }
 .why-arts::before {
   content:""; position:absolute; width:500px; height:500px; border-radius:50%;
   border:70px solid rgba(255,255,255,0.05);
@@ -212,7 +213,7 @@ a { text-decoration:none; }
   font-weight:600; color:white; line-height:1.5;
 }
 .why-arts-body {
-  font-size:15px; color:rgba(255,255,255,0.62); line-height:1.8;
+  font-size:15px; color:rgba(255,255,255,0.72); line-height:1.8;
   max-width:680px; margin:28px auto 0;
 }
 
@@ -267,7 +268,7 @@ a { text-decoration:none; }
   color:var(--ink); margin-bottom:3px;
 }
 .board-title-tag {
-  font-size:10.5px; font-weight:600; color:var(--soft-violet);
+  font-size:10.5px; font-weight:600; color:#8C5FA3;
   letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px;
 }
 .board-bio { font-size:13px; color:var(--ink-light); line-height:1.65; }
@@ -283,12 +284,12 @@ a { text-decoration:none; }
   content:""; position:absolute; right:0; top:50%; transform:translateY(-50%);
   width:1px; height:48px; background:rgba(255,255,255,0.08);
 }
-.val-icon { font-size:28px; margin-bottom:12px; display:block; }
+.val-icon { font-size:28px; margin-bottom:12px; display:block; color:var(--gold); }
 .val-title {
   font-family:"Fraunces",serif; font-size:16px; font-weight:600;
   color:var(--gold); margin-bottom:8px;
 }
-.val-desc { font-size:12.5px; color:rgba(255,255,255,0.45); line-height:1.65; }
+.val-desc { font-size:12.5px; color:rgba(255,255,255,0.55); line-height:1.65; }
 
 /* CTA */
 .about-cta {
@@ -304,7 +305,7 @@ a { text-decoration:none; }
   font-family:"Fraunces",serif; font-size:36px; font-weight:700;
   color:var(--ink); line-height:1.1; margin-bottom:14px;
 }
-.about-cta p { font-size:16px; color:rgba(44,44,58,0.7); line-height:1.75; max-width:520px; }
+.about-cta p { font-size:16px; color:var(--ink); line-height:1.75; max-width:520px; }
 .cta-btns { display:flex; flex-direction:column; gap:12px; align-items:center; }
 .btn-ink {
   background:var(--ink); color:white; font-size:11px; font-weight:700;
@@ -326,24 +327,24 @@ footer { background:var(--ink); padding:64px 56px 28px; }
 }
 .footer-brand h3 {
   font-family:"Fraunces",serif; font-size:17px; font-weight:600;
-  color:white; margin-bottom:8px;
+  color:var(--gold); margin-bottom:8px;
 }
 .footer-tagline {
-  font-size:14px; color:rgba(255,255,255,0.65); line-height:1.7;
+  font-size:14px; color:#fff; line-height:1.7;
   margin-bottom:24px; max-width:280px;
 }
 
 .footer-col h4 {
-  font-size:9.5px; font-weight:700; color:var(--gold);
+  font-size:17px; font-weight:700; color:var(--gold);
   letter-spacing:0.18em; text-transform:uppercase; margin-bottom:16px;
 }
 
-.footer-col ul li { font-size:14px; color:rgba(255,255,255,0.65); margin-bottom:9px; }
-.footer-col ul li a { color:rgba(255,255,255,0.65); text-decoration:none; }
+.footer-col ul li { font-size:14px; color:#fff; margin-bottom:9px; }
+.footer-col ul li a { color:#fff; text-decoration:none; }
 .footer-col ul li a:hover { color:#fff; }
 .footer-bottom {
   display:flex; justify-content:space-between;
-  font-size:12px; color:rgba(255,255,255,0.6);
+  font-size:12px; color:#fff;
 }
 </style>
 </head>
@@ -527,7 +528,8 @@ footer { background:var(--ink); padding:64px 56px 28px; }
       <div class="board-body">
         <div class="board-name">Peter Jampel</div>
         <div class="board-title-tag">President &amp; Founder</div>
-        Dr. Peter Jampel is a retired Adjunct Associate Professor of Music Therapy at NYU&rsquo;s Steinhardt School of Culture, Education &amp; Human Development, and former Director of Day Treatment Services at the Baltic Street Clinic, SBPC. He founded Baltic Street Into Action to expand access to arts-based mental health care.</div>
+        <div class="board-bio">Dr. Peter Jampel is a retired Adjunct Associate Professor of Music Therapy at NYU&rsquo;s Steinhardt School of Culture, Education &amp; Human Development, and former Director of Day Treatment Services at the Baltic Street Clinic, SBPC. He founded Baltic Street Into Action to expand access to arts-based mental health care.</div>
+      </div>
     </div>
 
     <div class="board-card treasurer">
@@ -671,7 +673,7 @@ footer { background:var(--ink); padding:64px 56px 28px; }
       <ul>
         <li>240 8th Street, Suite 5N</li><li>Brooklyn NY 11215</li>
         <li style="margin-top:10px;">(347) 450-0567</li>
-        <li>balticstreetintoaction.com</li>
+        <li><a href="https://balticstreetintoaction.com/" target="_blank" rel="noopener">balticstreetintoaction.com</a></li>
       </ul>
     </div>
   </div>
