@@ -11,7 +11,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Community Photography Lab for Veterans — Coming Soon — Baltic Street Into Action</title>
+<title>The Bridge — A Photography Exhibit by Veterans — Baltic Street Into Action</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
@@ -92,6 +92,24 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
 .lb-cap .ph-t { font-family:"Fraunces",serif; font-size:22px; }
 .lb-cap .ph-sub { font-size:13px; color:rgba(255,255,255,0.65); margin-top:4px; }
 .lb-close { position:absolute; top:24px; right:32px; background:none; border:0; color:#fff; font-size:30px; cursor:pointer; }
+
+.pimg img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.ptile:hover .pimg img { animation: bridgeWiggle .6s ease-in-out; }
+@keyframes bridgeWiggle {
+  0% { transform: rotate(0deg) scale(1.04); }
+  25% { transform: rotate(-1.4deg) scale(1.04); }
+  50% { transform: rotate(1.4deg) scale(1.04); }
+  75% { transform: rotate(-0.8deg) scale(1.04); }
+  100% { transform: rotate(0deg) scale(1.04); }
+}
+.ph-cta { font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--violet); margin-top:10px; }
+.ph-cta::after { content:" \2192"; }
+.lb-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+.lb-quote { font-size:14.5px; font-style:italic; color:rgba(255,255,255,0.85); max-width:560px; margin:14px auto 0; line-height:1.7; }
+.lb-more { margin-top:20px; background:none; border:1.5px solid rgba(255,255,255,0.5); color:#fff; font-size:11px; font-weight:600;
+  text-transform:uppercase; letter-spacing:0.08em; padding:10px 22px; cursor:pointer; transition:background .15s; }
+.lb-more:hover { background:rgba(255,255,255,0.12); }
+.credits-note { margin-top:18px; font-size:14px; color:var(--ink-light); line-height:1.8; max-width:760px; }
 </style>
 </head>
 <body>
@@ -106,20 +124,43 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
 <div class="page-hero">
   <div class="hero-circle hc1"></div><div class="hero-circle hc2"></div>
   <div class="wrap">
-    <div class="breadcrumb">Home<span class="sep">/</span><span class="here">Community Photography Lab for Veterans</span></div>
-    <h1>Community Photography<br>Lab <em>for Veterans.</em></h1>
-    <p class="hero-lede">The Community Photography Lab for Veterans is a photography exhibit celebrating mental health recovery, creative expression, and community resilience among the veterans BSIA serves — presented by Baltic Street Into Action.</p>
-    <div class="hero-stat">Coming Soon</div>
+    <div class="breadcrumb">Home<span class="sep">/</span><span class="here">The Bridge</span></div>
+    <h1>The <em>Bridge.</em></h1>
+    <p class="hero-lede">Photography is a transformational process. It takes reflected light and transforms it into an image&mdash;an object that can be held, remembered, shared, and seen anew. The Bridge features photographs created by Veterans who gathered weekly at the VA to explore photography as a means of exploration, self-expression, and personal growth.</p>
+    <div class="hero-stat" style="overflow-wrap:normal; word-break:normal;">10 Photographers</div>
   </div>
 </div>
 <section class="sec-parch">
-  <div class="wrap" style="max-width:720px;">
+  <div class="wrap" style="max-width:760px;">
     <div class="eyebrow">The Exhibit</div>
-    <h2>The Community Photography Lab for Veterans Is Coming Soon</h2>
-    <p class="section-sub">We&rsquo;re finalizing the photography and stories for the Community Photography Lab for Veterans, including material we&rsquo;re coordinating with our partners. Check back soon to see the collection, or get in touch if you&rsquo;d like to be notified when it opens.</p>
+    <h2>From Initial Concept to Final Image</h2>
+    <p class="section-sub">From initial concept to the final image, each of the ten photographers developed an original, project-based body of work. Week by week, they refined their vision, challenged themselves and one another, and practiced engaging with the world both within and beyond themselves.</p>
+    <p class="section-sub">These photographs are questions, statements, and invitations: What does treatment look like? What is beauty in the mundane? What contradictions exist between rich and poor in this great city? What remains of the music and dance that shaped you? In transforming the world before them into photographs, these artists also transformed something within themselves; creating bridges between past and future, photographer and viewer, inner and outer worlds.</p>
+    <p class="section-sub">Seek the questions. Consider what becomes possible when we choose what to notice, how to frame it, and how to share it. The Bridge invites you to see Veterans not only through what they have lived, but through what they create, discover, and become.</p>
+    <p class="credits-note">We appreciate the support of the Manhattan VA, Josephine Herrick Project, the Odyssey Project, and our main program funder, Baltic Street Into Action. Most of all we appreciate the vision of our photographers, featured below.</p>
   </div>
 </section>
-<div class="cta-band"><h2>Interested in Exhibiting or Attending?</h2><p>Reach out to learn about the opening reception, or about contributing work.</p><div class="cta-btns"><a class="btn btn-crimson" href="donate.html">Contact Us</a><a class="btn btn-outline-w" href="events.html">See Our Events</a></div></div>
+<section class="sec-parch-dark">
+  <div class="wrap">
+    <div class="eyebrow v">The Photographers</div>
+    <h2>Ten Photographers, Ten Bodies of Work</h2>
+    <p class="section-sub">Click any photograph to see the artist’s statement and a second image from their series.</p>
+    <div class="pgrid"><div class="ptile" onclick="openBridge('merk')"><div class="pimg pv1"><img loading="lazy" src="bridge-merk-featured.jpg" alt="Photograph by David Merk Enamorado"></div><div class="pmeta"><div class="ph-t">David Merk Enamorado</div><div class="ph-a">U.S. Army, 1989–2010</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('moultrie')"><div class="pimg pv2"><img loading="lazy" src="bridge-moultrie-featured.jpg" alt="Photograph by Henry Moultrie Jr."></div><div class="pmeta"><div class="ph-t">Henry Moultrie Jr.</div><div class="ph-a">U.S. Marine Corps</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('parilla')"><div class="pimg pg1"><img loading="lazy" src="bridge-parilla-featured.jpg" alt="Photograph by Pete Parilla"></div><div class="pmeta"><div class="ph-t">Pete Parilla</div><div class="ph-a">U.S. Navy, 04/1986–10/1989</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('luna')"><div class="pimg pc1"><img loading="lazy" src="bridge-luna-featured.jpg" alt="Photograph by Grisel Luna"></div><div class="pmeta"><div class="ph-t">Grisel Luna</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('bailarin')"><div class="pimg pv1"><img loading="lazy" src="bridge-bailarin-featured.jpg" alt="Photograph by Bailarín"></div><div class="pmeta"><div class="ph-t">Bailarín</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('hartley')"><div class="pimg pv2"><img loading="lazy" src="bridge-hartley-featured.jpg" alt="Photograph by Owen “Big Sarge” Hartley"></div><div class="pmeta"><div class="ph-t">Owen “Big Sarge” Hartley</div><div class="ph-a">U.S. Army, Retired, 08/11/1987–08/2008</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('fields')"><div class="pimg pg1"><img loading="lazy" src="bridge-fields-featured.jpg" alt="Photograph by Claristine Fields"></div><div class="pmeta"><div class="ph-t">Claristine Fields</div><div class="ph-a">U.S. Navy</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('miko')"><div class="pimg pc1"><img loading="lazy" src="bridge-miko-featured.jpg" alt="Photograph by Miko Y"></div><div class="pmeta"><div class="ph-t">Miko Y</div><div class="ph-a">U.S. Marine Corps</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('rahim')"><div class="pimg pv1"><img loading="lazy" src="bridge-rahim-featured.jpg" alt="Photograph by Mustapha Rahim"></div><div class="pmeta"><div class="ph-t">Mustapha Rahim</div><div class="ph-a">U.S. Army</div><div class="ph-cta">Click to see more work</div></div></div><div class="ptile" onclick="openBridge('williams')"><div class="pimg pv2"><img loading="lazy" src="bridge-williams-featured.jpg" alt="Photograph by Sinatra Williams"></div><div class="pmeta"><div class="ph-t">Sinatra Williams</div><div class="ph-a">U.S. Marine Corps</div><div class="ph-cta">Click to see more work</div></div></div></div>
+  </div>
+</section>
+<div class="cta-band"><h2>Bring The Bridge to More People</h2><p>Reach out to learn about exhibiting this work, attending an opening, or supporting future programs like this one.</p><div class="cta-btns"><a class="btn btn-crimson" href="donate.html">Contact Us</a><a class="btn btn-outline-w" href="events.html">See Our Events</a></div></div>
+<div class="lightbox" id="bridgeLightbox">
+  <button class="lb-close" onclick="closeBridge()" aria-label="Close">&times;</button>
+  <div class="lb-stage">
+    <div class="lb-img"><img id="lbImg" src="" alt=""></div>
+    <div class="lb-cap">
+      <div class="ph-t" id="lbName"></div>
+      <div class="ph-sub" id="lbService"></div>
+      <p class="lb-quote" id="lbQuote"></p>
+      <button class="lb-more" id="lbMoreBtn" onclick="toggleBridgeAlt()">See more of this work</button>
+    </div>
+  </div>
+</div>
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -133,5 +174,48 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
   </div>
   <div class="footer-bottom"><span>&copy; 2026 Baltic Street Into Action. All rights reserved.</span><span>501(c)3 Nonprofit &middot; Brooklyn, New York</span></div>
 </footer>
+<script>
+const BRIDGE = [{"id": "merk", "name": "David Merk Enamorado", "service": "U.S. Army, 1989–2010", "quote": "“Fall seven times, stand up eight.”", "statement": null}, {"id": "moultrie", "name": "Henry Moultrie Jr.", "service": "U.S. Marine Corps", "quote": "“Story telling through images; that’s an awesome task!”", "statement": "“To me, photography is an art of observation. It’s about finding something interesting in an ordinary place…I have found it has little to do with the things you see and everything with the way you see them.” — Elliott Erwitt"}, {"id": "parilla", "name": "Pete Parilla", "service": "U.S. Navy, 04/1986–10/1989", "quote": "“You can’t control everything that happens to you, but you can control how you react.”", "statement": "“When my mind gets heavy and my heart deflates, I don’t look for answers anymore. I look for solutions. I found the solution behind a long, dormant passion. I can tell my mood looking back up upon my pictures. I remember how that wash of relief came over me after I created something.”"}, {"id": "luna", "name": "Grisel Luna", "service": null, "quote": "“Capturing one dream at a time on this soul journey.”", "statement": null}, {"id": "bailarin", "name": "Bailarín", "service": null, "quote": "“Where there’s passion, there’s art.”", "statement": "“My name is Bailarín, and I am a street and event photographer who seeks to capture unposed moments full of life.”"}, {"id": "hartley", "name": "Owen “Big Sarge” Hartley", "service": "U.S. Army, Retired, 08/11/1987–08/2008", "quote": "“If you deeply observe, everything is your teacher.”", "statement": null}, {"id": "fields", "name": "Claristine Fields", "service": "U.S. Navy", "quote": "“Tell me and I forget. Teach me and I remember. Involve me and I learn.” — Benjamin Franklin", "statement": "“I am deeply drawn to the way vibrant hues and subtle tones can instantly shift a mood, tell a story, or evoke a memory. Color is one of my primary languages, and I use my lens to celebrate the world around me.”"}, {"id": "miko", "name": "Miko Y", "service": "U.S. Marine Corps", "quote": "“Art is where what we survive, survives.” — Kaveh Akbar", "statement": "“My interest in photography comes from its interplay of observation, perspective, and attention. Photographs reflect not just what we see in the world, but more importantly, how we see it and why. The aleatory nature of photography feels relevant, because it mirrors the unpredictability of life as I’ve experienced it. Yet beyond this contingency, there is a distinct presence of intention—both choice and agency—which leaves me perplexed and in wonder.”"}, {"id": "rahim", "name": "Mustapha Rahim", "service": "U.S. Army", "quote": "“Keep Shooting.” — Bailarín", "statement": null}, {"id": "williams", "name": "Sinatra Williams", "service": "U.S. Marine Corps", "quote": "“Fate whispers to the warrior, you cannot withstand the storm. The warrior whispers back, I am the storm.”", "statement": null}];
+let bridgeCurrent = null;
+let bridgeShowingAlt = false;
+function openBridge(id) {
+  const p = BRIDGE.find(x => x.id === id);
+  if (!p) return;
+  bridgeCurrent = p;
+  bridgeShowingAlt = false;
+  renderBridge();
+  document.getElementById('bridgeLightbox').classList.add('open');
+}
+function renderBridge() {
+  const p = bridgeCurrent;
+  if (!p) return;
+  const img = document.getElementById('lbImg');
+  img.src = 'bridge-' + p.id + '-' + (bridgeShowingAlt ? 'alt' : 'featured') + '.jpg';
+  img.alt = 'Photograph by ' + p.name;
+  document.getElementById('lbName').textContent = p.name;
+  document.getElementById('lbService').textContent = p.service || '';
+  document.getElementById('lbQuote').textContent = (bridgeShowingAlt && p.statement) ? p.statement : p.quote;
+  const btn = document.getElementById('lbMoreBtn');
+  if (!p.statement) {
+    btn.style.display = 'none';
+  } else {
+    btn.style.display = '';
+    btn.textContent = bridgeShowingAlt ? 'Back to featured photo' : 'See more of this work';
+  }
+}
+function toggleBridgeAlt() {
+  bridgeShowingAlt = !bridgeShowingAlt;
+  renderBridge();
+}
+function closeBridge() {
+  document.getElementById('bridgeLightbox').classList.remove('open');
+}
+document.getElementById('bridgeLightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeBridge();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeBridge();
+});
+</script>
 </body>
 </html>
