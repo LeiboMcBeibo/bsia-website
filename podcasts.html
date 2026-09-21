@@ -39,7 +39,7 @@ img { max-width:100%; display:block; }
 
 .breadcrumb { font-size:11px; letter-spacing:0.04em; margin-bottom:26px; color:rgba(255,255,255,0.7); }
 
-.page-hero h1 { font-family:"Fraunces",serif; font-size:52px; font-weight:700; line-height:1.05; max-width:700px; }
+.page-hero h1 { font-family:"Fraunces",serif; font-size:clamp(34px, 6vw, 58px); font-weight:700; line-height:1.05; max-width:700px; color:#fff; }
 .page-hero h1 em { font-style:italic; }
 
 section { padding:76px 56px; }
@@ -65,10 +65,10 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
   font-size:12px; color:#fff; }
 
 @media (max-width:900px) {
-  .nav { padding:0 20px; height:auto; flex-wrap:wrap; padding:12px 20px; gap:10px; }
-  .nav-links { flex-wrap:wrap; gap:14px; }
+  .nav { flex-direction:column; align-items:flex-start; height:auto; padding:14px 20px; gap:12px; }
+  .nav-brand { width:100%; }
+  .nav-links { width:100%; flex-wrap:wrap; gap:12px 18px; }
   section, .page-hero, .cta-band, footer { padding-left:24px; padding-right:24px; }
-  .page-hero h1 { font-size:38px; }
   .footer-grid { grid-template-columns:1fr; gap:32px; }
 }
 
@@ -219,7 +219,7 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
     </div>
     <div class="footer-col"><h4>Pages</h4><ul><li><a href="about-us.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="events.html">Events</a></li><li><a href="photos.html">Photography</a></li><li><a href="video.html">Video Library</a></li><li><a href="podcasts.html">Podcast</a></li><li><a href="donate.html">Contact Us</a></li></ul></div>
     <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="https://www.paypal.com/donate/?hosted_button_id=M57H6QKS82MAC" target="_blank" rel="noopener">Join Us</a></li><li><a href="donate.html">Contact Us</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><ul><li>240 8th Street, Suite 5N</li><li>Brooklyn NY 11215</li><li>(347) 450-0567</li><li><a href="https://balticstreetintoaction.com/" target="_blank" rel="noopener">balticstreetintoaction.com</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="https://balticstreetintoaction.com/" target="_blank" rel="noopener">balticstreetintoaction.com</a></li></ul></div>
   </div>
   <div class="footer-bottom"><span>&copy; 2026 Baltic Street Into Action. All rights reserved.</span><span>501(c)3 Nonprofit &middot; Brooklyn, New York</span></div>
 </footer>

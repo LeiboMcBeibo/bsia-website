@@ -118,17 +118,17 @@ body { font-family:'Inter',sans-serif; background:#111020; }
   text-transform:uppercase; color:var(--gold);
 }
 .h1 {
-  font-family:'Fraunces',serif; font-weight:700; font-size:50px;
+  font-family:'Fraunces',serif; font-weight:700; font-size:clamp(32px, 6vw, 56px);
   line-height:1.02; letter-spacing:-0.025em; color:white; margin-bottom:4px;
 }
 .h1-gold { color:var(--gold); }
 .h1-italic {
   font-family:'Fraunces',serif; font-style:italic; font-weight:400;
-  font-size:50px; line-height:1.02; letter-spacing:-0.025em;
-  color:rgba(255,255,255,0.78); display:block; margin-bottom:4px;
+  font-size:clamp(32px, 6vw, 56px); line-height:1.02; letter-spacing:-0.025em;
+  color:#fff; display:block; margin-bottom:4px;
 }
 .h1-recover {
-  font-family:'Fraunces',serif; font-weight:700; font-size:50px;
+  font-family:'Fraunces',serif; font-weight:700; font-size:clamp(32px, 6vw, 56px);
   line-height:1.02; letter-spacing:-0.025em; color:white;
   display:block; margin-bottom:26px;
 }
@@ -277,6 +277,13 @@ footer { background:var(--ink); padding:64px 56px 28px; }
 }
 .supporter-logo:hover { box-shadow:0 8px 22px rgba(44,44,58,0.12); transform:translateY(-2px); border-color:rgba(44,44,58,0.15); }
 .supporter-logo img { max-height:76px; max-width:210px; width:auto; height:auto; object-fit:contain; }
+
+@media (max-width:900px) {
+  .nav { flex-direction:column; align-items:flex-start; height:auto; padding:14px 20px; gap:12px; }
+  .nav-brand { width:100%; }
+  .nav-links { width:100%; flex-wrap:wrap; gap:12px 18px; }
+  .hero { grid-template-columns:1fr; }
+}
 </style>
 </head>
 <body>
@@ -376,8 +383,6 @@ footer { background:var(--ink); padding:64px 56px 28px; }
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-        <li>240 8th Street, Suite 5N</li><li>Brooklyn NY 11215</li>
-        <li style="margin-top:10px;">(347) 450-0567</li>
         <li><a href="https://balticstreetintoaction.com/" target="_blank" rel="noopener">balticstreetintoaction.com</a></li>
       </ul>
     </div>
