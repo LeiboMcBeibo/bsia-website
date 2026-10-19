@@ -102,6 +102,19 @@ a { text-decoration:none; }
 .ef-btn { display:inline-block; background:var(--ink); color:white; font-size:10.5px; font-weight:700;
   letter-spacing:0.08em; text-transform:uppercase; padding:13px 26px; white-space:nowrap; }
 
+/* Event card with photo (completed event) */
+.ef-photo { display:block; width:180px; height:150px; overflow:hidden; border-radius:4px; }
+.ef-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 58%; display:block; transition:transform 0.3s; }
+.event-feature:hover .ef-photo img { transform:scale(1.04); }
+.ef-body h3 a { color:inherit; }
+.ef-body h3 a:hover { color:var(--violet); }
+.ef-desc a { color:var(--violet); font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+@media (max-width:900px) {
+  .event-feature { grid-template-columns:1fr; gap:18px; padding:24px; }
+  .ef-photo { width:100%; height:210px; }
+  .ef-action { text-align:left; }
+}
+
 /* PAST EVENTS — grid */
 .past { padding:40px 56px 72px; background:var(--parch-dark); }
 .past-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
@@ -177,7 +190,7 @@ footer { background:var(--ink); padding:64px 56px 28px; }
     <li><a href="projects.html">Projects</a></li>
     <li><a href="events.html" class="active">Events</a></li>
     <li><a href="ukraine-project.html">The Ukrainian Project</a></li>
-    <li><a href="photos.html">Photography</a></li>
+    <li><a href="photos.html">V.A. Photo Project</a></li>
     <li><a href="video.html">Video Library</a></li>
     <li><a href="podcasts.html">Podcast</a></li>
 
@@ -202,15 +215,16 @@ footer { background:var(--ink); padding:64px 56px 28px; }
 <section class="upcoming">
 
   <div class="event-feature">
-    <div class="ef-date"><div class="ef-month">Sept</div><div class="ef-day">TBA</div><div class="ef-year">2026</div></div>
+    <a class="ef-photo" href="ukraine-project.html"><img src="ukraine-group-river.jpg" alt="Retreat families gathered by the river in Yaremche, in Ukraine&rsquo;s Carpathian Mountains" loading="lazy"></a>
     <div class="ef-body">
-      <span class="ef-cat">Retreat &middot; Healing Words: Ukraine</span>
-      <h3>Ukrainian Retreat Project</h3>
+      <span class="ef-cat">Retreat &middot; Held September 2026</span>
+      <h3><a href="ukraine-project.html">Ukrainian Retreat Project</a></h3>
       <div class="ef-meta">
-        <span class="ef-meta-item"><span class="ef-meta-icon">&#9679;</span> Location TBA</span>
+        <span class="ef-meta-item"><span class="ef-meta-icon">&#9679;</span> Yaremche, Carpathian Mountains, Ukraine</span>
       </div>
-      <p class="ef-desc">Scheduled for September, we&rsquo;re looking forward to sharing the details of this powerful project.</p>
+      <p class="ef-desc">Twelve Ukrainian military families spent two days of poetry, art, and rest in the Carpathian Mountains &mdash; far from the air-raid sirens. See the photos, the video, and the full story on <a href="ukraine-project.html">The Ukrainian Project</a> page.</p>
     </div>
+    <div class="ef-action"><a class="ef-btn" href="ukraine-project.html">Read the Story &rarr;</a></div>
   </div>
 
   <div class="events-empty-note">
@@ -300,7 +314,7 @@ footer { background:var(--ink); padding:64px 56px 28px; }
       </div>
     </div>
     <div class="footer-col"><h4>Pages</h4>
-      <ul><li><a href="about-us.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="events.html">Events</a></li><li><a href="ukraine-project.html">The Ukrainian Project</a></li><li><a href="photos.html">Photography</a></li><li><a href="video.html">Video Library</a></li><li><a href="podcasts.html">Podcast</a></li><li><a href="donate.html">Contact Us</a></li></ul>
+      <ul><li><a href="about-us.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="events.html">Events</a></li><li><a href="ukraine-project.html">The Ukrainian Project</a></li><li><a href="photos.html">V.A. Photo Project</a></li><li><a href="video.html">Video Library</a></li><li><a href="podcasts.html">Podcast</a></li><li><a href="donate.html">Contact Us</a></li></ul>
     </div>
     <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="https://www.paypal.com/donate/?hosted_button_id=M57H6QKS82MAC" target="_blank" rel="noopener">Join Us</a></li><li><a href="donate.html">Contact Us</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4>
