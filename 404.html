@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXH2LN9MCG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BXH2LN9MCG');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page Not Found — Baltic Street Into Action</title>
+<!-- All paths below are root-relative (start with "/") because GitHub Pages serves this file
+     for ANY missing address, including nested old WordPress paths like /about-us/our-team/. -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+<style>
+body { font-family:"Inter",sans-serif; background:var(--cream);
+  color:var(--ink); font-size:16px; line-height:1.75; -webkit-font-smoothing:antialiased; }
+a { text-decoration:none; }
+img { max-width:100%; display:block; }
+
+/* NAV */
+.nav {
+  position:sticky; top:0; z-index:100; background:var(--ink);
+  height:68px; display:flex; align-items:center; justify-content:space-between;
+  padding:0 40px; border-bottom:3px solid var(--gold);
+}
+.nav-brand { display:flex; align-items:center; gap:10px; }
+.nav-logo-img {
+  width:46px; height:46px; border-radius:50%; object-fit:cover;
+  border:2px solid var(--gold); box-shadow:0 0 0 3px rgba(212,160,23,0.18); flex-shrink:0;
+}
+.nav-wordmark-name { font-family:"Fraunces",serif; font-size:14px; font-weight:600; color:white; }
+.nav-wordmark-sub { font-size:10px; color:rgba(255,255,255,0.55); }
+.nav-links { display:flex; align-items:center; gap:22px; list-style:none; }
+.nav-links a { font-size:11.5px; font-weight:500; color:rgba(255,255,255,0.65); }
+.nav-links a:hover { color:#fff; }
+
+/* NOT-FOUND HERO */
+.nf-hero { background:linear-gradient(135deg,var(--violet-deep),var(--violet)); padding:96px 56px 88px;
+  position:relative; overflow:hidden; }
+.nf-hero::after { content:""; position:absolute; width:520px; height:520px; border-radius:50%;
+  border:70px solid rgba(255,255,255,0.04); top:-220px; right:-160px; pointer-events:none; }
+.nf-inner { position:relative; z-index:1; max-width:760px; }
+.nf-eyebrow { font-size:11px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#E0B952; margin-bottom:14px; }
+.nf-hero h1 { font-family:"Fraunces",serif; font-size:clamp(38px,6vw,64px); font-weight:700;
+  line-height:1.05; letter-spacing:-0.02em; color:#fff; margin-bottom:20px; }
+.nf-hero p { font-family:"Fraunces",serif; font-size:clamp(18px,2.2vw,21px); color:rgba(255,255,255,0.92); line-height:1.6; max-width:620px; }
+.nf-btns { display:flex; gap:14px; flex-wrap:wrap; margin-top:32px; }
+.nf-btn-gold { background:var(--gold); color:var(--ink); font-size:12px; font-weight:700; letter-spacing:0.1em;
+  text-transform:uppercase; padding:15px 36px; }
+.nf-btn-gold:hover { background:#E0B952; }
+.nf-btn-ol { border:1.5px solid rgba(255,255,255,0.7); color:#fff; font-size:12px; font-weight:600; letter-spacing:0.1em;
+  text-transform:uppercase; padding:13.5px 32px; }
+.nf-btn-ol:hover { background:rgba(255,255,255,0.1); }
+
+/* LINK GRID */
+.nf-links { padding:72px 56px 88px; max-width:1160px; margin:0 auto; }
+.nf-links h2 { font-family:"Fraunces",serif; font-size:clamp(24px,3vw,30px); font-weight:700; color:var(--ink); margin-bottom:28px; }
+.nf-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.nf-card { display:block; background:#fff; border-top:4px solid var(--violet); padding:26px 26px 24px;
+  box-shadow:0 4px 18px rgba(44,44,58,0.08); transition:transform .15s ease, box-shadow .15s ease; }
+.nf-card:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(44,44,58,0.14); }
+.nf-card:nth-child(3n+2) { border-top-color:var(--gold); }
+.nf-card:nth-child(3n) { border-top-color:#B33808; }
+.nf-card h3 { font-family:"Fraunces",serif; font-size:20px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+.nf-card p { font-size:14.5px; color:var(--ink-light); line-height:1.6; }
+.nf-card span { display:inline-block; margin-top:12px; font-size:11px; font-weight:700; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--violet); }
+
+/* FOOTER */
+footer { background:var(--ink); padding:64px 56px 28px; }
+.footer-grid { display:grid; grid-template-columns:2.2fr 1fr 1fr 1.2fr; gap:52px;
+  padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,0.07); margin-bottom:24px; }
+.footer-brand h3 { font-family:"Fraunces",serif; font-size:17px; font-weight:600; color:var(--gold); margin-bottom:8px; }
+.footer-tagline { font-size:14px; color:#fff; line-height:1.7; margin-bottom:24px; max-width:280px; }
+.footer-col h4 { font-size:17px; font-weight:700; color:var(--gold);
+  letter-spacing:0.18em; text-transform:uppercase; margin-bottom:16px; }
+.footer-col ul { list-style:none; }
+.footer-col ul li { font-size:14px; color:#fff; margin-bottom:9px; }
+.footer-col ul li a { color:#fff; text-decoration:none; }
+.footer-col ul li a:hover { color:#fff; }
+.footer-bottom { display:flex; justify-content:space-between; font-size:12px; color:#fff; }
+
+@media (max-width:900px) {
+  .nav { flex-direction:column; align-items:flex-start; height:auto; padding:14px 20px; gap:12px; }
+  .nav-brand { width:100%; }
+  .nav-links { width:100%; flex-wrap:wrap; gap:12px 18px; }
+  .nf-hero { padding:64px 24px 56px; }
+  .nf-links { padding:48px 24px 64px; }
+  .nf-grid { grid-template-columns:1fr; }
+  footer { padding-left:24px; padding-right:24px; }
+  .footer-grid { grid-template-columns:1fr; gap:32px; }
+  .footer-bottom { flex-direction:column; gap:6px; }
+}
+@media (min-width:901px) and (max-width:1100px) {
+  .nf-grid { grid-template-columns:repeat(2,1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="/">
+    <img class="nav-logo-img" src="/bsia-logo.png" alt="BSIA Logo">
+    <div>
+      <div class="nav-wordmark-name">Baltic Street Into Action</div>
+      <div class="nav-wordmark-sub">Mental Health Recovery Through the Arts</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us.html">About Us</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/events.html">Events</a></li>
+    <li><a href="/ukraine-project.html">The Ukrainian Project</a></li>
+    <li><a href="/photos.html">V.A. Photo Project</a></li>
+    <li><a href="/video.html">Video Library</a></li>
+    <li><a href="/podcasts.html">Podcast</a></li>
+    <li><a href="/donate.html">Contact Us</a></li>
+    <li><a href="https://www.paypal.com/donate/?hosted_button_id=M57H6QKS82MAC" target="_blank" rel="noopener" class="nav-donate">Join Us</a></li>
+  </ul>
+</nav>
+
+<section class="nf-hero">
+  <div class="nf-inner">
+    <div class="nf-eyebrow">Page not found</div>
+    <h1>This page has moved.</h1>
+    <p>Our website was rebuilt in 2026, so some older links no longer lead anywhere. Everything is still here &mdash; just in a new place. Start below, or head to the homepage.</p>
+    <div class="nf-btns">
+      <a href="/" class="nf-btn-gold">Go to the homepage</a>
+      <a href="/donate.html" class="nf-btn-ol">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<section class="nf-links">
+  <h2>You might be looking for</h2>
+  <div class="nf-grid">
+    <a class="nf-card" href="/about-us.html">
+      <h3>About Us</h3>
+      <p>Our history, mission, and the board behind Baltic Street Into Action.</p>
+      <span>Read more &rarr;</span>
+    </a>
+    <a class="nf-card" href="/projects.html">
+      <h3>Projects</h3>
+      <p>The creative arts therapy programs we fund, from Brooklyn to the Catskills.</p>
+      <span>See projects &rarr;</span>
+    </a>
+    <a class="nf-card" href="/ukraine-project.html">
+      <h3>The Ukrainian Project</h3>
+      <p>Two Days Without Sirens: a poetry therapy retreat in the Carpathian Mountains.</p>
+      <span>Read the story &rarr;</span>
+    </a>
+    <a class="nf-card" href="/photos.html">
+      <h3>V.A. Photo Project</h3>
+      <p>The Bridge: an online photography exhibit by Veterans.</p>
+      <span>View the exhibit &rarr;</span>
+    </a>
+    <a class="nf-card" href="/video.html">
+      <h3>Video Library</h3>
+      <p>Short films on how the arts help people recover.</p>
+      <span>Watch videos &rarr;</span>
+    </a>
+    <a class="nf-card" href="/podcasts.html">
+      <h3>Podcast</h3>
+      <p>Conversations with creative arts therapists, hosted by Dr. Peter Jampel.</p>
+      <span>Listen &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Baltic Street Into Action</h3>
+      <p class="footer-tagline">Advancing mental health recovery through creative arts therapy. A Brooklyn-based 501(c)3 nonprofit, incorporated 2014.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul><li><a href="/about-us.html">About Us</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/events.html">Events</a></li><li><a href="/ukraine-project.html">The Ukrainian Project</a></li><li><a href="/photos.html">V.A. Photo Project</a></li><li><a href="/video.html">Video Library</a></li><li><a href="/podcasts.html">Podcast</a></li><li><a href="/donate.html">Contact Us</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get Involved</h4>
+      <ul><li><a href="https://www.paypal.com/donate/?hosted_button_id=M57H6QKS82MAC" target="_blank" rel="noopener">Join Us</a></li><li><a href="/donate.html">Contact Us</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul><li><a href="https://balticstreetintoaction.com/">balticstreetintoaction.com</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Baltic Street Into Action. All rights reserved.</span>
+    <span>501(c)3 Nonprofit &nbsp;&middot;&nbsp; Brooklyn, New York</span>
+  </div>
+</footer>
+
+</body>
+</html>
