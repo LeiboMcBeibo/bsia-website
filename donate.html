@@ -150,5 +150,17 @@ footer { background:var(--ink); color:#fff; padding:64px 56px 28px; }
   <div class="footer-bottom"><span>&copy; 2026 Baltic Street Into Action. All rights reserved.</span><span>501(c)3 Nonprofit &middot; Brooklyn, New York</span></div>
 </footer>
 
+<script>
+// Analytics: count each Contact form submission as a "generate_lead" event (marked as a key event in GA4).
+// The submit event only fires after the browser's required-field checks pass, so empty or invalid forms are not counted.
+(function () {
+  var form = document.querySelector('form.ct-form');
+  if (!form || typeof gtag !== 'function') return;
+  form.addEventListener('submit', function () {
+    gtag('event', 'generate_lead', { form_name: 'contact_us', transport_type: 'beacon' });
+  });
+})();
+</script>
+
 </body>
 </html>
